@@ -16,7 +16,7 @@
          };
          async function poll() {
              try {
-                 const res = await fetch('http://localhost:8080/status');
+                 const res = await fetch('https://status.ramzi.uk/status');
                  const data = await res.json();
                  render(data.status);
              } catch (e) {
